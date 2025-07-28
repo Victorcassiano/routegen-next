@@ -1,0 +1,39 @@
+{
+  "name": "routegen-next",
+  "module": "index.ts",
+  "version": "0.1.0",
+  "type": "module",
+  "private": false,
+  "author": {
+    "name": "Victor Cassiano",
+    "url": "https://victorcassiano.netlify.app/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Victorcassiano/routegen-next"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "bin": {
+    "routegen-next": "./dist/cli.js"
+  },
+  "scripts": {
+    "dev": "tsup src/* --format esm --dts --watch --minify",
+    "build": "tsup src/* --format esm --dts --minify"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/js-yaml": "^4.0.9",
+    "tsup": "^7.2.0",
+    "typescript": "^5.4.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "fast-glob": "^3.3.3",
+    "js-yaml": "^4.1.0",
+    "next": "^15.4.4"
+  }
+}
